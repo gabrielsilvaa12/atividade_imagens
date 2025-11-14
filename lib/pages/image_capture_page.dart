@@ -161,8 +161,9 @@ class _ImageCapturePageState extends State<ImageCapturePage> {
       backgroundColor: Colors.grey[100],
       body: Column(
         children: [
-          const Header(), // SEU COMPONENTE NO TOPO 🎯
-          // Botões para Câmera e Galeria
+          const Header(),
+
+          // Botões para Camera e Galeria
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Row(
@@ -171,7 +172,7 @@ class _ImageCapturePageState extends State<ImageCapturePage> {
                 ElevatedButton.icon(
                   onPressed: () => _pickImage(ImageSource.camera),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFFFF1744), // Cor do Header
+                    backgroundColor: Color(0xFFFF1744),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 20,
@@ -184,7 +185,7 @@ class _ImageCapturePageState extends State<ImageCapturePage> {
                 ElevatedButton.icon(
                   onPressed: () => _pickImage(ImageSource.gallery),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFFFF1744), // Cor do Header
+                    backgroundColor: Color(0xFFFF1744),
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 20,
@@ -197,7 +198,8 @@ class _ImageCapturePageState extends State<ImageCapturePage> {
               ],
             ),
           ),
-          // Adiciona um espaço extra e o Divider
+
+          // coloca um espaço a + e o Divider
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Divider(thickness: 2),
@@ -220,7 +222,7 @@ class _ImageCapturePageState extends State<ImageCapturePage> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFFFF1744), // Cor do Header
+                    backgroundColor: Color(0xFFFF1744),
                     foregroundColor: Colors.white,
                   ),
                   child: const Text("Mapa"),
